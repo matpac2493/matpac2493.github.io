@@ -1,0 +1,9 @@
+
+#background-img {
+    background-color: turquoise;
+    background-image: url('../img/tygrys.jpg');
+    background-repeat: repeat-y;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: scroll;
+}
