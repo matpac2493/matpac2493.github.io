@@ -1,0 +1,36 @@
+#p1 {
+    background-color: yellow;
+}
+
+#p2 {
+background-color: royalblue;
+}
+
+#inline-elements p {
+display: inline;
+font-size: 18px;
+}
+
+#inline-elements p {
+background-color: tomato;
+}
+
+#inline-p1 {
+    background-color: blue
+}
+
+#inline-p2 {
+    background-color: red
+}
+
+#inline-block-elements li {
+background-color: thistle;
+width: 100px;
+height: 40px;
+margin:5px;
+display: inline-block;
+}
+
+#display-none {
+    display: none;
+}
