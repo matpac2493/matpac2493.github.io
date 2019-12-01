@@ -1,0 +1,24 @@
+#name:hover{
+    background-color: yellowgreen;
+    border: solid red }
+
+
+    #name:focus {
+        background-color: yellow;
+        border: 3px solid blue;
+    }
+
+    .customer:first-child{
+background-color: tomato;
+
+    }
+
+    .customer:nth-child(4){
+        background-color: violet;
+    }
+     .customer:nth-last-child(3) {
+        background-color: aquamarine;
+}
+    .customer:nth-last-child(3n-1) {
+        background-color: chartreuse;
+    }
