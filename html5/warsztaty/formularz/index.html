@@ -1,37 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
 </head>
 <body>
-        <form
-action="https://formspree.io/xgevaqay" method="POST">
+  
+  <form
+  action="https://formspree.io/xgevaqay"
+  method="POST">
 
-  <label>
-    Imię i Nazwisko:
-    <input type="text" name="_replyto" required>
+<label>
+  Imię 
+  <input type="text" name="Imię">
+</label>
+
+<label>
+  Nazwisko
+  <input type="text" name="Nazwisko">
+</label>
+
+<label>
+
+  Email:
+    <input type="email" name="mail">
   </label>
 
   <label>
-    Email:
-        <input type="email" name="Email">
-      </label>
-
-      <label>
-    Telefon:
-     <input type="tel" name="Numer telefonu">
-    </label>
+    Telefon
+    <input type="tel" name="Telefon">
+  </label>
+  
+  <label>
+Wybór miasta
+<select name="Wybór miasta">
+<option value="Kraków">Kraków</option>
+<option value="Warszawa">Warszawa</option>
+<option value="Gdańsk">Gdańsk</option>
+</select>
+</label>
 
   <label>
+
+Płeć
+<input type="radio" name="gender"> Mężczyzna
+<input type="radio" name="gender"> Kobieta
+  </label>
+<label>
+    <input type= "checkbox" name="Wyrażam zgodę na przetwarzanie danych osobowych">
+</label>
     Wiadomość:
-    <textarea name="message">Wiadomość</textarea>
+    <textarea name="Wiadomość"></textarea>
   </label>
 
   <button type="submit">Wyślij formularz</button>
-  <input type="submit" value="Wyślij formularz">
 </form>
 </body>
 </html>
