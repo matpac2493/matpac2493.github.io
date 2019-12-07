@@ -1,0 +1,24 @@
+/* Flex Direction */
+
+.flex-item {
+    color: white;
+    font-family: 'Lato' , sans-serif;
+    border: 1 px solid olive;
+    margin: 3px;
+    background-color: green;
+    max-width: 200px;
+
+}
+/* Dodajemy flex direction */
+.flex-item:nth-last-of-type(odd) {
+background-color: saddlebrown;
+
+
+}
+/* Granice kontenera-manipulujemy kontenerem */
+.container {
+
+    border: 2px dashed blue;
+    display: flex;
+    flex-direction: column-reverse;
+}
