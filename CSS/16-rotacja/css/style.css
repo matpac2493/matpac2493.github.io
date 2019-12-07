@@ -9,7 +9,7 @@ transition:all 1.5s;
 /* Obrót obrazka */
 
 .rotate img:hover{
-    transform: rotate(250deg);
+    transform: rotate(500deg);
 }
  
 /* Translate- pozycja */
@@ -53,10 +53,11 @@ transition:all 1.5s;
 
     75% {
         height: 50%;
-        transform: translateY(100px);
+        transform: translateY(100px)
         border: 12px solid hotpink;
 
     }
-}
+
+  }
 
 
