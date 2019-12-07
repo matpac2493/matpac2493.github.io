@@ -33,15 +33,37 @@ figure img{
 	width: 100%;
 	border: 2px solid #444;
 }
+ 
+/* Duże wyświetlacze */ 
+@media screen and (min-width: 993px) {
+	#gallery {
+		width: 90%;
+	}
 
-@media screen and (min-width:993px) {
-	#gallery{
-		width: 100%;
-
-			
+	figure {
+		width: 33%;
+	}
+}
+/* Mniejsze wyświetlacze, tablety */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+	figure {
+		width: 49%;
+	}
 }
 
-@media screen and (min-width:768px) and (max-width:992px) 
-{
-	#gallery{
+/* Małe wyświetlacze- wyświetlanie stron- responsywność */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	figure {
 		width: 100%;
+	}
+}
+
+/* Bardzo małe wyświetlacze */
+@media screen and (max-width: 480px) {
+	#gallery {
+		width: 100%;
+	}
+	figure {
+		width: 100%;
+	}
+}
