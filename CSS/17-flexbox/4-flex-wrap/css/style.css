@@ -1,0 +1,27 @@
+/* Flex Wrap */
+
+/* Manipulujemy itemami w kontenerze- zawijanie elementów
+ustalamy za pomocą flex-basis szerokość kolumny*/
+.flex-item {
+    color: white;
+    font-family: 'Lato' , sans-serif;
+    border: 1 px solid olive;
+    margin: 3px;
+    background-color: green;
+    flex-basis: 27%;
+
+}
+/* Dodajemy flex wrap */
+.flex-item:nth-last-of-type(odd) {
+background-color: saddlebrown;
+
+
+}
+/* Granice kontenera-tutaj dodajemy zawijenie wierszy
+flex-wrap:wrap */
+.container {
+
+    border: 2px dashed blue;
+    display: flex;
+  flex-wrap: wrap-reverse;
+}
