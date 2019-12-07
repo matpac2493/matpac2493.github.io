@@ -1,17 +1,19 @@
-/* Flex Display  */
+/* Flex Basis */
 
-/* Właściwości itemów flex */
+/* Właściwości itemów flex- manipulujemy itemem przy flex basis */
 .flex-item {
     color: white;
     font-family: 'Lato' , sans-serif;
     border: 1 px solid olive;
     margin: 3px;
     background-color: green;
+    flex-basis: 10%;
 
 }
-
+/* Dodajemy flex basis */
 .flex-item:nth-last-of-type(odd) {
 background-color: saddlebrown;
+flex-basis: 20%;
 
 }
 /* Granice kontenera */
