@@ -1,0 +1,322 @@
+
+/* dodanie informacji zeby wszystko było flex box sizing border box  */
+* {
+    box-sizing: border-box;
+
+}
+
+/* podpiecie czcionki do całego body */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #777777;
+    margin:0 auto;
+    padding: 0 auto;
+    font-size: 10px;
+}
+
+hr{ 
+    background-color: blue;
+    border: 0;
+    height: 1px;
+    width: 7em;
+}
+
+.btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid #007bff;
+    padding: 14px 20px;
+    display: inline-block;
+    color:#333;
+    cursor:pointer;
+    transition:all 1s;
+    font: size 1.4em;
+}
+
+/* tutaj stylujemy animacje, zmiania się kolor po najechaniu na buttona */
+
+.btn:hover {
+background-color: #007bff;
+color:#fff;
+
+}
+
+
+/* stylowanie sekcji  */
+
+section{
+text-align:center;
+
+}
+
+/* stylujemy h2  */
+
+h2{
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 1em;
+    font-size: 2em;
+ 
+
+    /* font weight oznacza grubość czcionki 100- to bedzie cienka czcionka, trzeba dawac powyzej 100, zapisujemy tylko liczbę całkowitą*/
+    font-weight: 400;
+
+}
+
+/* dodajemy kontener, aby wystylować paragrafy, w każdej sekcji bedzie div z klasa kontener, wrzucenie coś co bedzie ograniczało tekst paragrafów, w boxie, aby nie wylewało tekstu   */
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+/* stylujemy teraz header  */
+header {
+    display: flex;
+    /* ustawienie na 70vh,  */
+height: 70vh;   
+/* podpinamy zdjęcie pod background header */
+background-image: url(../img/header.jpg);
+/* zdjęcie cover- ma przykryc  */
+background-size: cover;
+/* ułożenie na środku zdjęcia */
+background-position: center;
+/* flexbox ułożenie na środku za pomocą flexbox */
+justify-content: center;
+align-items: center;
+text-align: center;
+
+}
+
+/* stylowanie header h1  */
+header h1 {
+    font-size: 2em;
+    color: #007bff;
+    /* stylowanie tekstu */
+    text-transform: uppercase;
+}
+
+/* stylowanie paragrafu w headerze  */
+header p {
+    font-size: 1.5em;
+    margin: 4em 0em;
+    color:#333;
+
+}
+
+/* stylownie span-miejsca wrzucenia tekstu w headerze  */
+header span {
+color: #007bff;
+
+}
+
+/* Stylowanie nawigacji nawigacja strony stosujemy pozycję sticky, zeby sie przyklejała do góry strony  */
+
+nav{
+position: sticky;
+background-color: #007bff;
+
+/* z index właśność CSS, pozwala nam wyciagnąć elementy wyciągnąć nam elementy na wierzch,, lub ukryć, nawigacja zawsze bedzie na wierzchu, bedzie przykrywała wszystko co będzie pod spodem wysokie wartości, aby zawsze były na wierzchu */
+z-index: 200;
+}
+
+/* stylujemy menu nawigacyjne dodajemy margines na 0 em pamietac o myslnikach i srednikach i kropkach */
+.nav-menu {
+    padding: 1em 0em;
+   text-align: center;
+   margin: 0em;
+
+}
+
+/* ustawienia menu item w nawigacji nav menu, znacznik li  prawo lewo  */
+.nav-menu .menu-item {
+    display: inline-block;
+    margin: 0em 1em;
+}
+
+/* stylowanie a w menu item a href */
+.nav-menu .menu-item a {
+
+    color:#fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.5em 2em;
+    font-size: 1.5em;
+
+}
+
+
+/* szukanie po selektorze atrybutu */
+[for='mobile-nav'],  #mobile-nav {
+display: none;
+
+}
+
+.circular {
+height: 20em;
+width: 20em;
+border-radius: 50%;
+
+}
+
+.about { 
+
+}
+
+
+p {
+    font-size:1.5em
+
+}
+
+.about p {
+    max-width: 70%;
+    margin: 4em auto 3em auto;
+
+}
+
+.portfolio .gallery-box {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-box .gallery-item {
+    flex-basis: 25%;
+    height: 20em;
+    margin: 0;
+    position: relative;
+
+    
+}
+
+.gallery-box .gallery-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+    }
+    
+.gallery-box .gallery-item h3 {
+    position: absolute;
+    height: 100%;
+    background-color: rgba(0, 130, 210, 0.7);
+    top:0;
+    font-size: 3.5em;
+    color:#fff;
+    font-weight: 300;
+    width: 100%;
+    margin: 0;
+    padding: 25% 0%;
+    opacity: 0;
+    transition: all 1s;
+
+}
+
+.gallery-box .gallery-item h3:hover {
+opacity: 1;
+
+
+}
+
+
+
+.contact form {
+    max-width: 70em;
+    margin: 0 auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+   
+}
+
+.contact form input:not([type="submit"]) {
+flex-basis: 48%;
+padding: 1.5em;
+margin: 1.5em 0em;
+
+}
+
+.contact form textarea {
+
+    flex-basis: 100%;
+    padding: 1.5em;
+    height: 10em;
+}
+
+.contact form [type="submit"] {
+    margin:0 auto;
+
+
+}
+
+.container .social-media {
+margin-top: 7em;
+
+}
+
+.social-media i {
+
+    display: inline-block;
+    margin: 0 1.5em;
+    font-size: 2.5em;
+}
+
+.social-media a {
+color: #007bff;
+
+}
+
+.footer {
+margin-top: 3em;
+width: 100%;
+height: 2em;
+font-size: 1em;
+color:#333333;
+background-color: darkgrey;
+display: block;
+text-align: center;
+
+
+}
+
+/* Media queries mniej niz 480 px */
+    
+@media screen and (max-width:480px;) {
+
+    [for="mobile-nav"] {
+        display: block;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: right;
+        padding: 1em 0;
+        font-size: 1.3em;
+}
+ 
+nav .nav-menu {
+    display: none;
+}
+  
+nav #mobile-nav:checked+ul {
+
+    display: block;
+}
+
+nav .nav-menu .menu-item {
+
+    display: block;
+    text-align: right;
+    margin:0;
+}
+
+ .nav-menu .menu-item a {
+
+    padding: 1.2em 2em;
+
+}
+
