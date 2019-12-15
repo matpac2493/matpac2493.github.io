@@ -21,3 +21,20 @@ if(raz>0 && dwa>0) {
     alert("brawo")
 }
 
+
+fetch('https://jsonplaceholder.typicode.com/posts') 
+.then(res=> res.json)
+.then (res=> {
+
+    for(let ele in res) {
+        console.log(res[ele])
+    }
+
+
+
+}) 
+
+let it=0
+while (it<10) {
+    console.log(it)
+}
