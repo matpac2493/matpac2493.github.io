@@ -22,21 +22,21 @@
 
 // wstawienie buttona pomiedzy paragrafami  1 metoda dodawania atrybutów
 
-let btn=document.createElement ("button")
-let text= document.createTextNode("Jestem")
-btn.appendChild(text)
-let classAtr=document.createAttribute("class")
-classAtr.value = "mainBtn"
+// let btn=document.createElement ("button")
+// let text= document.createTextNode("Jestem")
+// btn.appendChild(text)
+// let classAtr=document.createAttribute("class")
+// classAtr.value = "mainBtn"
 
 
 //  Druga metoda dodawania atrybutów, stworzenie buttona, 
 
 // 1 stworzenie buttona
-btn.setAttribute("class", "mainBtn")
+// btn.setAttribute("class", "mainBtn")
 
 // 2 podpięcie buttona do strony
 // get element to pobranie diva, po jego id maindiv append child to dodanie buttona, na koniec diva 
-document.getElementById("maindiv").appendChild(btn)
+// document.getElementById("maindiv").appendChild(btn)
 
 
 
@@ -47,3 +47,32 @@ document.getElementById("maindiv").appendChild(btn)
 
 let test=document.getElementById("3par").innerHTML="już nie"
 console.log("TCL: test", test)
+
+
+// odwołanie po klasie: trzeba dodac klasę, linku a href, mainA,  i wtedy odwołujemy sie do tablicy, musimy wybrać 0 element czyli perwszy element w tablicy, aby się podmienił
+
+let changeHref = document.getElementsByClassName("mainA")
+console.log("TCL: changeHref", changeHref)
+
+for ( let i=0; i < changeHref.length; i++) {
+if(changeHref[i].innerHTML== "drugi link") 
+{ changeHref[i].href = "https://www.onet.pl/"
+    
+}
+} 
+
+
+
+// Podpinanie Eventu pierwszy sposób
+
+function pierwszyEvent () {
+    
+}
+console.log(pierwszyEvent)
+
+
+// drugi event double click
+
+
+
+
