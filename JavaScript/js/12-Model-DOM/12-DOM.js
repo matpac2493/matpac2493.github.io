@@ -76,3 +76,47 @@ console.log(pierwszyEvent)
 
 
 
+// Dodanie bloku input type text, w html, o id mainInput, dodanie paragrafu p4 o id par 4  
+
+function inputEvent () {
+
+    let valueInput= document.getElementById("mainInput").value
+    console.log(valueInput)
+}
+
+document.getElementById("mainInput").onchange=inputEvent
+
+// Funkcja podmieniająca input type, gdzie wpisuje się tekst, to tekst dynamicznie, się zmienia w paragrafie nr 4
+
+function inputEvent() {
+    let valueInput=document.getElementById("mainInput").value
+    console.log(valueInput)
+    document.getElementById("par4").innerHTML=valueInput
+}
+
+document.getElementById("mainInput").oninput=inputEvent
+
+
+
+// Funkcja addeventlistener wkurzacz, klikamy na div, i wyskakuje alert
+function wkurzacz () {
+    alert (123)
+}
+
+// event addeventListener potrzebuje 2 rzeczy pierwszej, jako coś co trzeba zrobić, np. klik, i druga rzecz to nazwa funkcji
+// document.getElementById("maindiv").addEventListener("click",wkurzacz)
+
+// // funkcja anonimowa function e- pseudo element- w tym przypadku należy opisać funkcję 
+// document.getElementById("maindiv").addEventListener("click",function (e) {
+//     console.log(e)
+//     alert(132)
+// })
+
+// wstrzymanie domyślnej akcji- funkcja addeventlistener + funkcja anonimowa function (e)- e mozemy zapisac dowolnie np dzialanie
+
+document.getElementById("wp").addEventListener("click", function (dzialanie) {
+dzialanie.preventDefault()
+
+
+
+})
